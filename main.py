@@ -6,7 +6,7 @@ rus_up = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВ
 final_text = ""
 add_sim = ""
 
-
+#Функция расшифровки шифра цезаря
 def crypt(langv_en_ru, source_text, add_sim, final_text, offset):
   if langv_en_ru == "ru":
     for i in range(len(source_text)):
@@ -35,6 +35,8 @@ def crypt(langv_en_ru, source_text, add_sim, final_text, offset):
       else :
         final_text += source_text[j]
     print(final_text)
+
+#Функция дешифровки, когда мы знаем шаг сдвига    
 def decrypt(langv_en_ru, source_text, add_sim, final_text, offset):
   if langv_en_ru == "ru":
     for q in range(len(source_text)):
@@ -63,6 +65,8 @@ def decrypt(langv_en_ru, source_text, add_sim, final_text, offset):
       else :
         final_text += source_text[k]
     print(final_text)
+
+    
 def secret_decrypt(langv_en_ru, source_text, add_sim, final_text, offset):
   for g in range(32):
     if langv_en_ru == "ru":
