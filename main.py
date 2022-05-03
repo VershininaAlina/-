@@ -6,7 +6,7 @@ rus_up = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВ
 final_text = ""
 add_sim = ""
 
-#Функция расшифровки шифра цезаря 
+#Функция расшифровки шифра цезаря
 def crypt(langv_en_ru, source_text, add_sim, final_text, offset):
   if langv_en_ru == "ru":
     for i in range(len(source_text)):
